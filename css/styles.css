@@ -1,3 +1,6 @@
+/* 
+  FONSTS 
+*/
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -29,4 +32,20 @@
   src: local(''),
        url('../assets/fonts/roboto-v29-latin-700.woff2') format('woff2'),
        url('../assets/fonts/roboto-v29-latin-700.woff') format('woff');
+}
+/* 
+  Default styles
+*/
+html{
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
