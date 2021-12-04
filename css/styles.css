@@ -66,11 +66,121 @@ body::before{
   background-color: rgba(0, 0, 0, .5);
 }
 .container{
-  /* width: 400px; */
+  max-width: 400px;
   /* height: 500px; */
   background: rgba( 255, 255, 255, 0.15 );
   box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.37 );
-  backdrop-filter: blur( 10px );
-  -webkit-backdrop-filter: blur( 10px );
-  border-radius: 10px;
+  backdrop-filter: blur( 2px );
+  -webkit-backdrop-filter: blur( 2px );
+  border-radius: 3px;
+  padding: 25px;
+}
+.login-form{
+  text-align: center;
+}
+.login-form h1{
+  color: #fff;
+  font-weight: 600;
+  font-size: 30px;
+}
+.email-validation{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding-left: 10px;
+  margin-top: 40px;
+}
+.email-validation input{
+  width: 100%;
+  padding: 10px;
+  font-size: 17px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+}
+.email-validation input::placeholder{
+  font-weight: 500;
+}
+.password-validation{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+.password-validation input{
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+}
+.password-validation input::placeholder{
+  font-weight: 500;
+}
+.password-forgot-btn{
+  /* width: 100%; */
+  display: block;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+  margin-top: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 17px;
+}
+.login-btn{
+  width: 100%;
+  padding: 10px;
+  font-size: 17px;
+  margin-top: 20px;
+  color: #fff;
+  font-weight: 600;
+  background-color: rgb(39, 165, 250);
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.sc-text{
+  color: #fff;
+}
+.social-medias{
+  display: flex;
+  justify-content: space-between;
+}
+.facebook-btn, .instagram-btn{
+  display: flex;
+  background-color: rgb(17, 68, 236);
+  color: #fff;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: opacity .2s ease;
+}
+.instagram-btn{
+  background-color: rgb(236, 17, 53);
+}
+.facebook-btn:hover, .instagram-btn:hover{
+  opacity: 80%;
+}
+.facebook-btn i, .instagram-btn i{
+  margin-right: 5px;
+}
+.footer-text{
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+}
+.footer-text a{
+  text-decoration: none;
+  color: rgb(34, 162, 236);
+  padding-left: 5px;
+}
+.footer-text a:hover{
+  text-decoration: underline;
 }
