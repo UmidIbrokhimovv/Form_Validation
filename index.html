@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form Validation</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -15,13 +16,35 @@
         <h1>Log In</h1>
       </header>
       <main>
-        <input type="email" placeholder="Email address" required>
-        <p id="text">Email is valid</p>
-        <input type="password" placeholder="Password" required>
+        <div class="email-validation">
+          <i class="fas fa-user"></i>
+          <input type="email" placeholder="Email address" required>
+        </div>
+        <span id="text"></span>
+        <div class="password-validation">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Password" required>
+        </div>
+        <span id="password-text"></span>
         <button type="button">Forgot password?</button>
         <button type="submit">Login</button>
       </main>
       <footer>
+        <p>or login with </p>
+        <div class="social-medias">
+          <div class="facebook-btn">
+            <span>
+              <i class="fab fa-facebook-f"></i>
+              Facebook
+            </span>
+          </div>
+          <div class="instagram-btn">
+            <span>
+              <i class="fab fa-instagram"></i>
+              Instagram
+            </span>
+          </div>
+        </div>
         <span>Do you have not account? <a href="">Sigup now</a></span>
       </footer>
     </div>
